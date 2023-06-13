@@ -19,6 +19,5 @@ jobs:
           
     - name: Run some Tests against LocalStack
       run: |
-          awslocal s3 mb s3://test
-          awslocal s3 ls
+          awslocal ec2-instance-connect ssh --instance-id i-78068dddc6a58c0b2
           echo "Test Execution complete!" 
