@@ -19,5 +19,5 @@ jobs:
           
     - name: Run some Tests against LocalStack
       run: |
-          awslocal ec2 run-instances --image-id ami-xxxxxxxx --count 1 --instance-type t2.micro --key-name MyKeyPair --security-group-ids sg-2906b636bca033f48
+          awslocal iam create-user --user-name Yash  
           echo "Test Execution complete!" 
